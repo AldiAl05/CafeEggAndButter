@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".Admin.ManageUser">
+    
+    <ImageView
+        android:id="@+id/imgBackmanagetoadmin"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_back"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvBackmanagetoadmin"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="<Kembali"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:padding="10dp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textColor="@color/white"/>-->
+
+    <TextView
+        android:id="@+id/textdoang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="User Customer"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMusers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textdoang"
+        tools:listitem="@layout/list_user" />
+
+</RelativeLayout>

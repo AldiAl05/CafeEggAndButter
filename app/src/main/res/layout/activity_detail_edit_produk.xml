@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".DetailProduk"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/app_bar_produk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgBackTomanagemenu"
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/detailTitlep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Produk"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/detailImagep"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/app_bar_produk"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_upload_img" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/detailImage"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle2"
+        app:cardElevation="20dp"
+        android:clipToOutline="true">
+
+        <TextView
+            android:id="@+id/textdoang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:text="Deskripsi"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_below="@id/textdoang"
+            android:justificationMode="inter_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Description"
+            android:id="@+id/detailDescp"
+            android:textSize="18dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailDescp"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|end"
+                android:text="Harga"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/orange"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/detailHargap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detailDesc"
+                    android:text="Harga"
+                    android:textColor="@color/orange"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                app:menu_colorNormal="@color/orange"
+                app:menu_colorPressed="@color/orange"
+                app:menu_fab_size="normal"
+                app:menu_icon="@drawable/ic_baseline_list_24"
+                app:menu_openDirection="up"
+                app:menu_showShadow="true">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/editButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_edit_24"
+                    app:fab_colorNormal="@color/green"
+                    app:fab_showShadow="true"
+                    app:fab_size="mini" />
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:id="@+id/deleteButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_delete_24"
+                    app:fab_colorNormal="@color/orange"
+                    app:fab_showShadow="true"
+                    app:fab_size="mini" />
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

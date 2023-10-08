@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".Admin.ManageUser">
+
+    <ImageView
+        android:id="@+id/imgBackmanageptoadmin"
+        android:layout_width="25dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_back"/>
+
+
+    <TextView
+        android:id="@+id/textdoang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Pesanan"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLPesanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textdoang"
+        tools:listitem="@layout/list_pesanan" />
+
+</RelativeLayout>

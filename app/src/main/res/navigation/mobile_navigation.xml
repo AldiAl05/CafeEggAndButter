@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation3"
+    app:startDestination="@+id/nav_beranda">
+
+    <fragment
+        android:id="@+id/nav_beranda"
+        android:name="com.example.pemesanancafeeggandbutter.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.pemesanancafeeggandbutter.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_Logout"
+        android:name="com.example.pemesanancafeeggandbutter.ui.logout.LogoutFragment"
+        android:label="@string/menu_Logout"
+        tools:layout="@layout/fragment_logout" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.example.pemesanancafeeggandbutter.ui.History.HistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_history" />
+
+
+</navigation>

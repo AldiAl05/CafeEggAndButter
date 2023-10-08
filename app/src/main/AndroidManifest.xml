@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pemesanancafeeggandbutter">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PemesananCafeEggAndButter">
+        <activity
+            android:name=".Admin.ManagePesanan"
+            android:exported="false" />
+        <activity
+            android:name=".KonfirmasiPesanan"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.DetailEditProduk"
+            android:exported="false" />
+        <activity
+            android:name=".DetailProduk"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddDataProduk"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ManageProduk"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.EditProduk"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:allowBackup="true"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.EditDataUser"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ManageUser"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Admin"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main_menu"
+            android:theme="@style/Theme.PemesananCafeEggAndButter.NoActionBar" />
+        <activity
+            android:name=".LoginDanReqister.Login"
+            android:exported="false" />
+        <activity
+            android:name=".LoginDanReqister.Register"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
